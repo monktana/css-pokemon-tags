@@ -52,10 +52,11 @@ body {
 }
 
 .type-pill {
+  position: relative;
+
   color: var(--font-color);
   font-size: .9rem;
   font-weight: 500;
-  /* -webkit-text-stroke: .5px #0c0c0c; */
   text-shadow: 1px 1px 1px black;
 
   text-align: center;
@@ -67,74 +68,224 @@ body {
   border-radius: .7rem;
 }
 
+.type-pill.icon {
+  border-radius: 0;
+  border-left: none;
+}
+
+.icon::before {
+  content:'';
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translate(-100%, -50%);
+
+  width: 2.5ch;
+  height: calc(100% + 1px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border: 1px solid var(--font-color);
+}
+
 .normal {
+  background-color: var(--color-normal);
+}
+.icon.normal {
+  background-color: black;
+}
+.icon.normal::before {
+  background-image: url('./assets/normal.svg');
   background-color: var(--color-normal);
 }
 
 .fire {
   background-color: var(--color-fire);
 }
+.icon.fire {
+  background-color: black;
+}
+.icon.fire::before {
+  background-image: url('./assets/fire.svg');
+  background-color: var(--color-fire);
+}
 
 .water {
+  background-color: var(--color-water);
+}
+.icon.water {
+  background-color: black;
+}
+.icon.water::before {
+  background-image: url('./assets/water.svg');
   background-color: var(--color-water);
 }
 
 .electric {
   background-color: var(--color-electric);
 }
+.icon.electric {
+  background-color: black;
+}
+.icon.electric::before {
+  background-image: url('./assets/electric.svg');
+  background-color: var(--color-electric);
+}
 
 .grass {
+  background-color: var(--color-grass);
+}
+.icon.grass {
+  background-color: black;
+}
+.icon.grass::before {
+  background-image: url('./assets/grass.svg');
   background-color: var(--color-grass);
 }
 
 .ice {
   background-color: var(--color-ice);
 }
+.icon.ice {
+  background-color: black;
+}
+.icon.ice::before {
+  background-image: url('./assets/ice.svg');
+  background-color: var(--color-ice);
+}
 
 .fighting {
+  background-color: var(--color-fighting);
+}
+.icon.fighting {
+  background-color: black;
+}
+.icon.fighting::before {
+  background-image: url('./assets/fighting.svg');
   background-color: var(--color-fighting);
 }
 
 .poison {
   background-color: var(--color-poison);
 }
+.icon.poison {
+  background-color: black;
+}
+.icon.poison::before {
+  background-image: url('./assets/poison.svg');
+  background-color: var(--color-poison);
+}
 
 .ground {
+  background-color: var(--color-ground);
+}
+.icon.ground {
+  background-color: black;
+}
+.icon.ground::before {
+  background-image: url('./assets/ground.svg');
   background-color: var(--color-ground);
 }
 
 .flying {
   background-color: var(--color-flying);
 }
+.icon.flying {
+  background-color: black;
+}
+.icon.flying::before {
+  background-image: url('./assets/flying.svg');
+  background-color: var(--color-flying);
+}
 
 .psychic {
+  background-color: var(--color-psychic);
+}
+.icon.psychic {
+  background-color: black;
+}
+.icon.psychic::before {
+  background-image: url('./assets/psychic.svg');
   background-color: var(--color-psychic);
 }
 
 .bug {
   background-color: var(--color-bug);
 }
+.icon.bug {
+  background-color: black;
+}
+.icon.bug::before {
+  background-image: url('./assets/bug.svg');
+  background-color: var(--color-bug);
+}
 
 .rock {
+  background-color: var(--color-rock);
+}
+.icon.rock {
+  background-color: black;
+}
+.icon.rock::before {
+  background-image: url('./assets/rock.svg');
   background-color: var(--color-rock);
 }
 
 .ghost {
   background-color: var(--color-ghost);
 }
+.icon.ghost {
+  background-color: black;
+}
+.icon.ghost::before {
+  background-image: url('./assets/ghost.svg');
+  background-color: var(--color-ghost);
+}
 
 .dragon {
+  background-color: var(--color-dragon);
+}
+.icon.dragon {
+  background-color: black;
+}
+.icon.dragon::before {
+  background-image: url('./assets/dragon.svg');
   background-color: var(--color-dragon);
 }
 
 .dark {
   background-color: var(--color-dark);
 }
+.icon.dark {
+  background-color: black;
+}
+.icon.dark::before {
+  background-image: url('./assets/dark.svg');
+  background-color: var(--color-dark);
+}
 
 .steel {
   background-color: var(--color-steel);
 }
+.icon.steel {
+  background-color: black;
+}
+.icon.steel::before {
+  background-image: url('./assets/steel.svg');
+  background-color: var(--color-steel);
+}
 
 .fairy {
+  background-color: var(--color-fairy);
+}
+.icon.fairy {
+  background-color: black;
+}
+.icon.fairy::before {
+  background-image: url('./assets/fairy.svg');
   background-color: var(--color-fairy);
 }
